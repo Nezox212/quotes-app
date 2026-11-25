@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 32px;
+  max-width: 560px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 28px;
+  border-bottom: 3px solid #764ba2;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.quote-text {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #2c2c2c;
+  font-style: italic;
+  margin-bottom: 16px;
+  min-height: 60px;
+}
+
+.quote-author {
+  font-size: 16px;
+  color: #764ba2;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.loading {
+  font-size: 18px;
+  color: #888;
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(118, 75, 162, 0.4);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
